@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">DuiTang</string>
+    <string name="title_activity_loading_view">LoadingViewActivity</string>
+    <string name="copy_right">Copy right@duitang.com</string>
+    <string name="label_search">搜索感兴趣的内容</string>
+    <string name="label_cancel">取消</string>
+    <string name="label_home">首页</string>
+    <string name="label_discover">发现</string>
+    <string name="label_shop">商店</string>
+    <string name="label_me">我</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="label_post_new">发布新的</string>
+    <string name="label_photo">图片</string>
+    <string name="label_article">文章</string>
+    <string name="label_daily">每日精选</string>
+    <string name="label_beauty">美容时尚</string>
+    <string name="label_food">美食手札</string>
+    <string name="label_living">住家生活</string>
+    <string name="label_entertainment">影视文娱</string>
+    <string name="label_travel">旅行游记</string>
+    <string name="label_draw">绘画手作</string>
+    <string name="label_photograph">美图摄影</string>
+</resources>

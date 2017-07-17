@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="scoll_menu">
+        <item>每日精选</item>
+        <item>美容时间</item>
+        <item>美食手札</item>
+        <item>住家生活</item>
+        <item>影视文娱</item>
+        <item>旅行游记</item>
+        <item>绘画手作</item>
+        <item>美图摄影</item>
+    </string-array>
+</resources>

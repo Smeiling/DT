@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:padding="10dp">
+
+        <EditText
+            android:id="@+id/btn_anim"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_search_bar"
+            android:hint="@string/label_search"
+            android:textColorHint="@color/colorTextGray"
+            android:imeOptions="actionDone"
+            android:paddingBottom="5dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="5dp" />
+
+        <TextView
+            android:id="@+id/tv_cancel"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:text="@string/label_cancel"
+            android:visibility="visible" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/content_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="40dp"
+        android:background="@color/colorBgWhite"
+        android:orientation="vertical">
+
+        <HorizontalScrollView
+            android:id="@+id/horizontalScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="#FFFFFF"
+            android:fadingEdge="none"
+            android:scrollbars="none">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorBgWhite">
+
+                <RadioGroup
+                    android:id="@+id/radioGroup"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentTop="true"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/btn1"
+                        style="@style/radioButton"
+                        android:text="@string/label_daily" />
+
+                    <RadioButton
+                        android:id="@+id/btn2"
+                        style="@style/radioButton"
+                        android:text="@string/label_beauty" />
+
+                    <RadioButton
+                        android:id="@+id/btn3"
+                        style="@style/radioButton"
+                        android:text="@string/label_food" />
+
+                    <RadioButton
+                        android:id="@+id/btn4"
+                        style="@style/radioButton"
+                        android:text="@string/label_living" />
+
+                    <RadioButton
+                        android:id="@+id/btn5"
+                        style="@style/radioButton"
+                        android:text="@string/label_entertainment" />
+
+                    <RadioButton
+                        android:id="@+id/btn6"
+                        style="@style/radioButton"
+                        android:text="@string/label_travel" />
+
+                    <RadioButton
+                        android:id="@+id/btn7"
+                        style="@style/radioButton"
+                        android:text="@string/label_draw" />
+
+                    <RadioButton
+                        android:id="@+id/btn8"
+                        style="@style/radioButton"
+                        android:text="@string/label_photograph" />
+
+
+                </RadioGroup>
+
+                <ImageView
+                    android:id="@+id/img1"
+                    android:layout_width="100dp"
+                    android:layout_height="4dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/colorTheme" />
+            </RelativeLayout>
+        </HorizontalScrollView>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/pager"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_search_result"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp"
+        android:background="@color/colorGray"
+        android:orientation="vertical"
+        android:visibility="gone"></LinearLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom|end"
+        android:layout_marginBottom="70dp"
+        android:layout_marginRight="@dimen/fab_margin"
+        android:src="@drawable/float_add_btn"
+        app:backgroundTint="@color/colorTheme"
+        app:borderWidth="0dp"
+        app:elevation="0dp"
+        app:fabSize="normal"
+        app:layout_anchor="@id/navigation_bar"
+        app:layout_anchorGravity="bottom|right"
+        app:pressedTranslationZ="0dp"
+        app:rippleColor="@color/colorRippleTheme" />
+</FrameLayout>
